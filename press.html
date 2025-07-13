@@ -20,6 +20,9 @@ body {
 }
 
 .photos {
+	max-width: 1000px;
+
+.row {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 4px;
@@ -114,14 +117,16 @@ img {
 <div class="photos">
 <h3>photos</h3>
 
-<div class = "column">
-	<img src=hall_rats.jpeg>
-	<img src=wall_rats1.jpeg>
-</div>
-<div class = "column">
-	<img src=wall_rats2.jpeg>
-	<img src=vcr_rats.jpeg>
-	<img src=w&c_b&w.jpeg>
+<div class = "row">
+	<div class = "column">
+		<img src=hall_rats.jpeg>
+		<img src=wall_rats1.jpeg>
+	</div>
+	<div class = "column">
+		<img src=wall_rats2.jpeg>
+		<img src=vcr_rats.jpeg>
+		<img src=w&c_b&w.jpeg>
+	</div>
 </div>
 </div>
 </body>

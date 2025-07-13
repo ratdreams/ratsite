@@ -20,31 +20,36 @@ body {
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
 }
 
 /* Create two equal columns that sits next to each other */
 .column {
-  flex: 40%;
-  max-width: 40%;
-  padding: 0 4px;
+	flex: 40%;
+  	max-width: 40%;
+  	padding: 0 4px;
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+  	margin-top: 8px;
+  	vertical-align: middle;
+  	width: 100%;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    	flex: 100%;
+    	max-width: 100%;
   }
 }
+
+.video {
+	margin: auto;
+}
+	
 
 	
 h1   {color: #000000; font-family: monaco, monospace; font-size: 42pt;}
@@ -83,7 +88,7 @@ img {
 <body>
 <h1>rat dreams</h1>
 	
-<p2>"ohio valley folk / art rock"</p2>
+<p2>"ohio valley folk rock"</p2>
 	
 <br>
 <br>
@@ -124,7 +129,9 @@ img {
 </div>
 
 <h3>video</h3>
-	<iframe src="https://player.vimeo.com/video/1099916993?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" title="Rat Dreams - eve"></iframe>
+<div class = "video">
+	<iframe src="https://player.vimeo.com/video/1099916993?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" title="Rat Dreams - eve"></iframe>
+</div>
 </body>
 </html>
 	

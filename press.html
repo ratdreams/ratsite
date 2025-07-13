@@ -6,14 +6,52 @@
 body {
 	background-color: #d2c2c1; 
 	text-align: left;
-	padding-top: 50px;
+	margin: auto;
+	height: 80%
+	padding-bottom: 200px;
+	width: 60%;
+	padding-left: 50px;
 	padding-right: 50px;
-	padding-bottom: 50px;
-	padding-left: 200px;	
-	height: 100%;
-	margin: 0;
-	max-width: 800px;
-	min-width: 400px;
+}
+
+.bio {
+	max-width: 500px;
+	min-width: 50px;
+}
+
+.photos {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 	
@@ -57,6 +95,7 @@ img {
 <br>
 
 <h2>press kit</h2>
+<div class = "bio">
 <h3>bio</h3>
 <p>Rat Dreams plays panoramic folk-rock rooted in storytelling and fragmented by electronic sounds, noise, and improvisation. Alt-country, old time, slowcore, 90s rock, minimalism, and ambient influences can be heard throughout their work.</p>
 
@@ -70,12 +109,23 @@ img {
 
 <p>With in the summer you dream of god, Rat Dreams offers an album that gathers together the many past tendencies of the band into a comprehensive whole. This is the band at a new peak of musicianship, songwriting, and collective truth-seeking.</p>
 
+</div>
+
+<div class="photos">
 <h3>photos</h3>
-<img src=hall_rats.jpeg>
-<img src=wall_rats1.jpeg>
-<img src=wall_rats2.jpeg>
-<img src=vcr_rats.jpeg>
-<img src=w&c_b&w.jpeg>
+
+<div class = "column">
+	<img src=hall_rats.jpeg>
+	<img src=wall_rats1.jpeg>
+</div>
+<div class = "column">
+	<img src=wall_rats2.jpeg>
+	<img src=vcr_rats.jpeg>
+	<img src=w&c_b&w.jpeg>
+</div>
+</div>
+</body>
+</html>
 	
 
   
